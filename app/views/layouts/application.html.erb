@@ -5,11 +5,18 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="http://localhost:3000/flats">Simple Air</a>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
